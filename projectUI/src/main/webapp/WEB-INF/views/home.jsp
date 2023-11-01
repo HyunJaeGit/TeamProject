@@ -3,10 +3,20 @@
 <%@ include file="header.jsp" %>
 
 <main>
-	<section>
+	<section class="home">
 		<h4>내용x</h4>
 		<h4>내용x</h4>
 		<h4>내용x</h4>
+		<h4>내용x</h4>
+		<h4>내용x</h4>
+		<h4>내용x</h4>
+		<h4>내용x</h4>
+		<h4>내용x</h4>
+		<h4>내용x</h4>
+	</section>
+<hr>
+	<section class="ex">
+		<img src="${cpath }/resources/img/태그검색.png">
 	</section>
 </main>
 

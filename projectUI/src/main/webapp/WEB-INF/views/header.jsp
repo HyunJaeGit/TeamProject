@@ -11,28 +11,37 @@
 </head>
 <body>
 <!-- <h1>Foodie MBTI: Korean restaurant for International travel</h1> -->
+
 <header>
-	<div class="header-top">
-		<div class="language">
+	<section class="header-top-back">
+	<section class="header-top">
+		<p>한국의 맛집여행, 레스토랑 가이드</p>
+		<div class="language-container">
+			<ul class="language">
+				<li><img src="${cpath }/resources/img/signUpIcon.png"></li>
+				<li><img src="${cpath }/resources/img/english2.png"></li>
+				<li><img src="${cpath }/resources/img/china.png"></li>
+				<li><img src="${cpath }/resources/img/japan.png"></li>
+			</ul>
 		</div>
-	</div>
-	<hr>
+	</section>
+	</section>
 	
-	<nav class="header-bottom">
+	<section class="header-bottom">
 		<div class="logo">
-			<img src="#">
+			<img src="${cpath }/resources/img/logo2.png">
 		</div>
 		
-		<div class="header-menu">
+		<div class="menu">
 			<div class="search">
 				<input name="search">
 				<button>검색</button>
 			</div>
 			<div>
-				<img src="#">
+				<img src="${cpath }/resources/img/menu.png">
 			</div>
 		</div>	
-	</nav>
+	</section>
 	<hr>
 
 </header>
