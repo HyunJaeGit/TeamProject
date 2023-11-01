@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+body {
+	width: 1000px;
+	margin: 0 auto;
+}
+hr {
+	width: 100%;
+}
