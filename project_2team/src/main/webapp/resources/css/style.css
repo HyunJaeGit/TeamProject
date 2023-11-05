@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+/* 	
+빠른 취합을 위해 통일해주세요
+
+1) section으로 페이지전체를 묶음
+2) section은 클래스이름 통일 
+	- 예시) home.jsp 파일 
+	- section class="home";
+3) class명 : 자신이 맡은 파일명_기능명 순으로 클래스이름 통일
+	- 예시) reply_list, header_input, detail_foodimg4, detail_table
+
+4) 공통 속성(아직 미정이긴하지만)
+	(1) section
+		- width : 1000px;
+		- box-sizing : border-box;
+		- margin: 0 auto;
+		- border: 1px solid;
+ 	(2) body
+		- margin: 0 auto;
+ */
+body {
+	margin: 0 auto;
+}
+section {
+	width: 1000px;
+	margin: 10px auto;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: 0;
+	color: black;
+}
+
+/* header.jsp */
+header {
+	padding: 0;
+}
+hr {
+	margin: 0;
+}
+
+/* 헤더 상단섹션(회원가입아이콘, 언어선택) */
+.header-top-back {
+	background-color: #fff3e0;
+	margin: 0 auto;
+}
+.header-top {
+	width: 1000px;
+	height: 30px;
+	margin: 0 auto;
+	padding: 5px 20px;
+	box-sizing:  border-box;
+	
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 80%;
+	font-weight:lighter; 
+}
+.header-top p {
+	margin: 0;
+	padding: 0;
+}
+.language-container {
+	width: 75px;
+	height: 30px;
+	overflow: hidden;
+	align-items: center;
+	box-sizing: border-box;
+}
+.language-container:hover {
+	width: 180px;
+	cursor: pointer;
+}
+.language {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	gap: 15px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.language img {
+	width: 25px;
+	height: 23px;
+}
+
+/* 헤더 바텀 (검색, 메뉴기능) */
+.header-bottom {
+	width: 1000px;
+	height: 70px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.logo {
+	width: 240px;
+	height: 60px;
+}
+.logo img {
+	width: 280px;
+	height: 45px;
+}
+.menu {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+.search {
+	width: 400px;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	overflow: hidden;
+	gap:3px;
+}
+.search input {
+	width: 90%;
+}
+.search button {
+	border-radius: 3px;
+	border: 1px solid #ff6f00;
+	background-color: #ffcc80;
+	width: 100px;
+}
+
+.menu img {
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: 0.5px 0.5px 0.5px 1px;
+	cursor: pointer;
+	margin: 2px;
+}
+
+.menu_button {
+	width: 42px;
+	height: 42px;
+	box-sizing: border-box;
+}
+.menu_container {
+	width: 45px;
+	height: 45px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.menu_container:hover {
+	overflow: visible;
+}
+.menu_icons td {
+	padding: 15px;
+}
+.menu_icons img {
+	box-shadow: 0;
+}
+.menu_icons td:hover {
+	padding: 15px;
+	background-color: #e1f5fe;
+	border-radius: 15px;
+}
+.menu_icons table {
+	width: 200px;
+	margin: auto;
+}
+.menu_scroll {
+	margin-top: 15px;
+	position: relative;
+	right: 220px;
+	height: 200px;
+	width: 320px;
+	height: 300px;
+	overflow: auto;
+	padding: 0;
+}
+.menu_back {
+	background-color: #e1f5fe;
+	width: 280px;
+	height: 400px;
+	border-radius: 15px;
+	padding: 10px;
+}
+.menu_back2 {
+	background-color: white;
+	border-radius: 15px;
+}
+.menu_login {
+	list-style: none;
+	display: flex;
+	margin-top: 20px;
+}
+.menu_login li {
+	padding: 10px 20px;
+}
+
+/* footer.jsp */
+
+.footer-back {
+	margin: 0 auto;
+	width: 1000px;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 5px 20px;
+}
+
+.footer-back ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	justify-content: space-around;
+}
+.footer-back img {
+	width: 140px;
+	height: 140px;
+	margin: 0 auto;
+}
+.footer-back li {
+	
+}
+
+
+/* home.jsp */
+.home {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 5px 20px;
+	box-sizing: border-box;
+	text-align: center;
+	height: 500px;
+}
+.ex {
+	width: 1000px;
+	margin: 0 auto;
+}
+.ex img {
+	width: 800px;
+	margin: 0 auto;
+	margin-left: 100px;
+}
+.home_list {
+	text-align: left;
+	border: 1px solid;
+	width: 400px;
+	margin: 0 auto;
+}
+
+/* myPage/password.jsp */
+
+.password {
+	display: flex;
+	flex-direction: row;
+	margin: 10px auto;
+}
+.myPage_menu {
+	border: 1px solid;
+	background-color: #f1f1f1;
+	width: 20%;
+	height: 400px;
+	padding: 0;
+	margin-top: 30px;
+}
+.myPage_menu ul {
+  list-style-type: none;
+  vertical-align: middle;
+  padding: 0;
+}
+.myPage_menu li {
+	margin-bottom: 10px;
+}
+
+.password_input {
+	margin: 50px auto;
+	width: 400px;
+	height: 200px;
+	text-align: center;
+	border: 1px solid;
+	padding: 20px;
+}
+
+.myPage_menu a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.myPage_menu  a.active {
+  background-color: #555;
+  color: white;
+}
+
+.myPage_menu  a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* myPage/bookmark.jsp */
+
+.bookmark {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+}
+.boards {
+	margin: 0 auto;
+	width: 600px;
+	border-collapse: collapse;
+}
+.boards th, .boards td {
+	border: 1px solid;
+	padding: 5px 10px;
+}
+
+.myPage_art {
+	margin: 10px auto;
+	text-align: center;
+}
+
+/* myPage/myReply.jsp */
+
+.myReply {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+}
+.myReply .boards {
+	width: 700px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
