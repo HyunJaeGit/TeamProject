@@ -1,0 +1,18 @@
+MZ_project ver 0.14 -> ver 0.15 
+
+1. 동규님 준우님 작업물 취합완료 (확인해주세요 : 폴더변경된 부분있을수있음)
+	- 동규님 jquery , header.js 적용되는 부분 안되는데 확인바랍니다
+	- 준우님 account 페이지 실행을 위해 -> DB연결 완료
+		(MZ -> c##fourtress -> it 192.168.1.100 )
+2. 신규 페이지 + support(fna, qna, notice, sup_main) 작성
+	- 해당 페이지 css 추가
+	- noticeVO, noticeDAO, supportController 추가
+
+3. 신규 테이블 : 
+	1) account
+	2) restaurante
+	3) notice
+
+파일: 
+1) 11_14 noticeTable.sql
+2) 11_14_account_restaurant.sql
